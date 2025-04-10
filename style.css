@@ -1,0 +1,65 @@
+.chew-crew-homepage {
+    background-image: url('./Images/ChewHeader.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+    font-family:'Courier New';
+    font-weight: bold;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.team-photos {
+    height: 195px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.our-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.our-team > div {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 175px;
+}
+
+@media (max-width: 600px) {
+    .our-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-team > div {
+        width: 90%;
+    }
+
+    .team-photos {
+        width: 100%;
+        height: auto;
+    }
+    
+    h1, h2, h3, h4, h5, p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
