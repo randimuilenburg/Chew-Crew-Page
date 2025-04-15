@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5, p {
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
+    transition: filter 0.3s ease;
+}
+
+.team-photos:hover {
+    filter: brightness(1.5)
 }
 
 .our-team {
